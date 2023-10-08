@@ -1,0 +1,79 @@
+@media (max-width: 768px)
+    ul.topnav li.nav-item a.nav-a
+        display: none
+
+    ul.topnav li.dropdownIcon
+        display: block
+        position: absolute
+        top: 10px
+        right: 15px
+        font-size: 30px
+        padding: 10px
+
+    ul.topnav.responsive li.dropdownIcon
+        position: absolute
+        top: 10px
+        right: 15px
+
+    ul.topnav.responsive
+        flex-direction: column
+        padding: 15px 0
+
+    ul.topnav.responsive li
+        position: relative
+        top: 20px
+        text-align: right
+
+    ul.topnav.responsive li a.nav-a
+        display: block
+        line-height: 0.75
+
+    .navbar
+        background-color: $nav-color !important
+
+    .skills
+        background-image: none, $bgc-light
+        background-repeat: repeat-y
+
+    .profile, .exp, .skills, .cert, .projects
+        scroll-snap-align: none
+        scroll-snap-stop: none
+        block-size: none
+        height: auto
+        padding-top: 30px
+
+        .h1-all
+            padding: 25px 0
+
+    html, body
+        block-size: none
+        scroll-snap-type: none
+
+    #page-footer
+        display: block
+
+@media (max-width: 1240px)
+    .profile, .skills, .cert, .projects
+        height: auto
+
+    .exp
+        height: 160vh
+
+@media (max-width: 990px)
+    .offcanvas-title
+        font-size: 2rem
+
+    .btn-close
+        margin-top: (-40px) !important
+
+    .navbar
+        top: 0
+
+    .navbar-expand-lg .offcanvas
+        position: absolute
+        width: 80% !important
+        height: 100vh
+        background-image: linear-gradient(to bottom, #030212, #040315, #040417, #04051a, #04061c, #050923, #050c2b, #030e32, #001241, #001350, #00135f, #06116d)
+
+    .navbar-text
+        left: auto

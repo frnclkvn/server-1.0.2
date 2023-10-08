@@ -1,0 +1,52 @@
+.projects
+    background-image: $bgc-dark
+    padding-bottom: 50px
+    height: auto
+
+.col-proj
+    padding: 1rem 0.75rem
+    margin: auto
+    border-radius: $border-radius
+    .p-card
+        background-color: $base-light
+        transition: 0.2s ease-in-out
+        padding: 3px
+        margin: 0 auto
+        border: 1 solid
+        box-shadow: 5px 10px 8px 10px $nav-color
+        width: 24rem
+        &:hover
+            cursor: pointer
+            transform: scale(1.1)
+        .card-body
+            transition: all 0.4s
+            position: absolute
+            bottom: -40px
+            left: 0
+            z-index: 99
+            transition: all 0.4s
+            .card-title
+                color: $white
+                font-weight: 1000
+                text-shadow: 2px 2px 4px $black
+                background-color: #b4b4b44d
+                padding: 5px
+                border-radius: 0.25rem
+            
+.card-visit
+    transform: translateY(0.5rem)
+    transition: all 0.4s
+    opacity: 0
+    a
+        text-decoration: none
+        color: $white
+        
+.p-card:hover .card-body
+    bottom: 0.5rem
+
+.p-card:hover .card-visit
+    opacity: 1
+    transform: none
+    color: $white
+
+
